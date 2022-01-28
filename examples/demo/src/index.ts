@@ -48,65 +48,20 @@ setDiagnosticsOptions({
 });
 
 const value = `
-# Property descriptions are displayed when hovering over properties using your cursor
-property: This property has a JSON schema description
 
+zowe:
+  setup:
+    mvs:
+      proclib: q.b.c
+      paramlib: n.b.a
+      hlq: user
+job:
+  name: JOB
+  prefix: "ZWE"
 
-# Titles work too!
-titledProperty: Titles work too!
+logDirectory: /zowe/logs
 
-
-# Even markdown descriptions work
-markdown: hover me to get a markdown based description 😮
-
-
-# Enums can be autocompleted by placing the cursor after the colon and pressing Ctrl+Space
-enum:
-
-
-# Of course numbers are supported!
-number: 12
-
-
-# As well as booleans!
-boolean: true
-
-
-# And strings
-string: I am a string
-
-
-# This property is using the JSON schema recursively
-reference:
-  boolean: Not a boolean
-
-
-# Also works in arrays
-array:
-  - string: 12
-    enum: Mewtwo
-    reference:
-      reference:
-        boolean: true
-
-
-# JSON referenses can be clicked for navigation
-pointer:
-  $ref: '#/array'
-
-
-# This anchor can be referenced
-anchorRef: &anchor can be clicked as well
-
-
-# Press control while hovering over the anchor
-anchorPointer: *anchor
-
-
-formatting:       Formatting is supported too! Under the hood this is powered by Prettier. Just press Ctrl+Shift+I or right click and press Format to format this document.
-
-
-
+externalPort: 2022
 
 
 
